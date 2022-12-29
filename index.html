@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YokYo - Fast Video Saver</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="./script.js" defer></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+
+    <div id="preloader"></div>
+    <!-- Header Starts -->
+    <nav>
+        <div class="logo">
+            <p>YokYo.</p>
+        </div>
+        <div class="hamburger">
+            <div class="Home"></div>
+            <div class="How YokYo Works"></div>
+            <div class="Privacy Policy"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a id="down" href="#iconsection">Sites Supported</a></li>
+        </ul>
+    </nav>
+    <!-- Header Ends -->
+    <!-- URL TextBox Section starts -->
+    <section class="container">
+        <div class="content">
+            <h1>YokYo - Fast Video Saver</h1>
+            <p>Ultimate Video Saver from top video sharing websites</p>
+            <form action="">
+                <input type="text" class="Inputfield" id="videoSearchBar" placeholder="Paste a video URL">
+            </form>
+            <div class="buttons">
+                <button-download onclick="checkUrl()">Download</button-download>
+                <button-paste id="button">Paste from clipboard</button-paste>
+            </div>
+        </div>
+        <div class="sidecontainer">
+            <img class="sideImg" src="./header.webp" alt="">
+        </div>
+
+    </section>
+    <!-- Download View Starts -->
+    <section class="DownloadSection" id="Downloadsection">
+        <div class="leftAlign">
+            <img class="responseThumbnail" src="" alt="" onclick="redirect()">
+            <p class="title">Video Title goes here!</p>
+            <p class="author1">Video Owner</p>
+        </div>
+        <div class="rightAlign">
+            <a class="qualityBtnbox1" href="" target="_blank">
+                <div class="qualityBtn1">
+                    <span class="quality1">Download 720P</span>
+                    <span class="size1">450MB</span>
+                </div>
+            </a>
+            <a id="btn2" class="qualityBtnbox2" href="" target="_blank">
+                <div class="qualityBtn2" href="">
+                    <span class="quality2">Download 480P</span>
+                    <span class="size2">280MB</span>
+                </div>
+            </a>
+            <a id="btn3" class="qualityBtnbox3" href "" target="_blank">
+                <div class="qualityBtn3" href="">
+                    <span class="quality3">Download 360P</span>
+                    <span class="size3">130MB</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section id="ErrorVideo">
+        <div>
+            <img src="./Infinity.gif">
+        </div>
+        <div class="error">
+            <p id="Errortxt">Video Unavailable Or Invalid Link!</p>
+            <p class="errortext">Try Another video Link</p>
+        </div>
+    </section>
+
+    <!-- Sites supported section starts -->
+    <section id="iconsection" class="iconSection">
+        <h1 class="siteTitle">YokYo supports sites listed below</h1>
+        <div class="iconsContainer">
+            <div class="icons">
+                <img class="iconImage" src="./youtube.svg" alt="">
+                <p class="siteName">Youtube</p>
+            </div>
+            <div class="icons">
+                <img class="iconImage" src="./facebook.svg" alt="">
+                <p class="siteName">Facebook</p>
+            </div>
+    </section>
+    <!-- How to use section starts -->
+    <section class="guide">
+        <div class="left">
+            <p>How to use?</p>
+            <h1>YokYo</h1>
+            <p>Ultimate Video Downloader from Top Video sharing sites</p>
+        </div>
+        <div class=" right">
+            <div class="right-content">
+                <div class="Infodiv">
+                    <i class="fa-solid fa-copy fa-lg"></i>
+                    <div class="text">
+                        <p>Copy shareable link</p>
+                    </div>
+                </div>
+                <div class="Infodiv">
+                    <i class="fa-regular fa-paste fa-lg"></i>
+                    <div class="text">
+                        <p>Paste The Video URL</p>
+                    </div>
+                </div>
+                <div class="Infodiv">
+                    <i class="fa-solid fa-download fa-lg"></i>
+                    <div class="text">
+                        <p>Video gets downloaded</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer starts -->
+    <footer class="footer">
+        <div class="container1">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>YokYo - Fast Video Saver!</h4>
+                    <ul>
+                        <li><a href="https://www.freeprivacypolicy.com/live/d8640834-f336-45a4-9276-ad2b843c0bbd" target = "_blank" >Privacy policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Made with ❤ in India</h4>
+                    <!-- <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/_.adityyaa" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Ends -->
+
+</body>
+<script>
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+    const links = document.querySelectorAll(".nav-links li");
+
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle("open");
+        links.forEach(link => {
+            link.classList.toggle("fade");
+        });
+
+        hamburger.classList.toggle("toggle");
+    });
+</script>
+
+<script>
+    var Id1 = document.getElementById("preloader");
+    var url = document.getElementById("videoSearchBar").value;
+    const redirect = () => {
+        var url = document.getElementById("videoSearchBar").value;
+        if (url != "") {
+            window.open(url, "_blank");
+        }
+    }
+</script>
+
+</html>
